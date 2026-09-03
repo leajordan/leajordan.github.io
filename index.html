@@ -3,9 +3,10 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <title>Lea Jordan | University of Zurich</title>
 
-  <meta name="description" content="Lea Jordan is a PhD researcher in sociology at the University of Zurich working on gender, work, family, and social inequality." />
+  <meta name="description" content="Lea Jordan is a PhD Candidate in sociology at the University of Zurich working on gender inequality, work and family, and social stratification." />
 
   <link rel="stylesheet" href="styles.css" />
 
@@ -33,7 +34,6 @@
       text-decoration: underline;
     }
 
-    /* optional: make emphasized names/keywords consistent with green theme */
     strong {
       color: #4a8f6a;
       font-weight: 600;
@@ -48,12 +48,46 @@
       padding: 2.25rem 1rem;
     }
 
+    .profile-column {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex: 0 0 auto;
+    }
+
     .hero .avatar {
       width: 240px;
       max-width: 42vw;
       border-radius: 14px;
       flex: 0 0 auto;
       object-fit: cover;
+    }
+
+    .profile-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+      margin-top: 16px;
+      width: 240px;
+    }
+
+    .profile-button {
+      display: inline-flex;
+      align-items: center;
+      padding: 8px 14px;
+      border: 1px solid #4b5563;
+      border-radius: 8px;
+      color: #4b5563;
+      text-decoration: none;
+      font-weight: 400;
+      transition: border-color 0.2s ease, color 0.2s ease;
+    }
+
+    .profile-button:hover {
+      color: #4a8f6a;
+      border-color: #4a8f6a;
+      text-decoration: none;
     }
 
     .hero .content {
@@ -90,6 +124,10 @@
         width: 100%;
         text-align: left;
       }
+
+      .profile-column {
+        width: 100%;
+      }
     }
   </style>
 </head>
@@ -98,9 +136,13 @@
 
 <header>
   <nav class="nav" aria-label="Primary">
+
     <div class="brand">
-      <a href="index.html" style="text-decoration:none;color:inherit">Lea Jordan</a>
+      <a href="index.html" style="text-decoration:none;color:inherit">
+        Lea Jordan
+      </a>
     </div>
+
     <div class="tabs">
       <a href="index.html" aria-current="page">About</a>
       <a href="research.html">Research</a>
@@ -108,76 +150,91 @@
       <a href="cv.html">CV</a>
       <a href="contact.html">Contact</a>
     </div>
+
   </nav>
 </header>
 
 <main class="container">
+
   <section id="about" class="hero" aria-labelledby="about-title">
 
-   <div class="profile-column">
+    <div class="profile-column">
 
-  <img class="avatar" src="lea.jpg" alt="Portrait of Lea Jordan" />
+      <img class="avatar" src="lea.jpg" alt="Portrait of Lea Jordan" />
 
-  <div class="profile-links">
+      <div class="profile-links">
 
-    <a class="profile-button"
-       href="mailto:jordan@soziologie.uzh.ch">
-      ✉ Email
-    </a>
+        <a class="profile-button"
+           href="mailto:jordan@soziologie.uzh.ch">
+          ✉ Email
+        </a>
 
-    <a class="profile-button"
-       href="https://orcid.org/0000-0001-9556-6397"
-       target="_blank"
-       rel="noopener noreferrer">
-      ORCID
-    </a>
+        <a class="profile-button"
+           href="https://orcid.org/0000-0001-9556-6397"
+           target="_blank"
+           rel="noopener noreferrer">
+          ORCID
+        </a>
 
-    <a class="profile-button"
-       href="https://www.linkedin.com/in/leamariejordan/"
-       target="_blank"
-       rel="noopener noreferrer">
-      LinkedIn
-    </a>
+        <a class="profile-button"
+           href="https://www.linkedin.com/in/leamariejordan/"
+           target="_blank"
+           rel="noopener noreferrer">
+          LinkedIn
+        </a>
 
-  </div>
+      </div>
 
-</div>
+    </div>
 
     <div class="content">
+
       <h1 id="about-title">Lea Jordan</h1>
 
       <p class="subtitle">
         PhD Candidate<br />
-        <a href="https://www.suz.uzh.ch/en.html" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.suz.uzh.ch/en.html"
+           target="_blank"
+           rel="noopener noreferrer">
           Department of Sociology, University of Zurich
         </a>
       </p>
 
       <p>
-        I am a PhD Candidate in the Department of Sociology at the University of Zurich. My PhD is funded by 
+        I am a PhD Candidate in the Department of Sociology at the University of Zurich.
+        My PhD is funded by
         <strong>
-          <a href="https://www.humanreproduction.uzh.ch" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.humanreproduction.uzh.ch"
+             target="_blank"
+             rel="noopener noreferrer">
             Human Reproduction Reloaded (H2R)
           </a>
-        </strong>, 
-        an interdisciplinary research program at the University of Zurich. As part of H2R, I work within the research team of 
+        </strong>,
+        an interdisciplinary research program at the University of Zurich.
+        As part of H2R, I work within the research team of
         <strong>
-          <a href="https://www.humanreproduction.uzh.ch/en/Research-Areas/Human-Reproduction-in-Societies-and-Markets.html" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.humanreproduction.uzh.ch/en/Research-Areas/Human-Reproduction-in-Societies-and-Markets.html"
+             target="_blank"
+             rel="noopener noreferrer">
             Human Reproduction in Societies and Markets
           </a>
         </strong>.
       </p>
+
       <p>
-        My research interests lie at the intersection of gender inequality, work and family, and social stratification. 
-        I study how gender inequalities emerge and evolve across the life course, particularly in relation to parenthood, employment, and career decisions. 
-        I am especially interested in how gender norms, workplace structures, and institutional contexts shape these inequalities. 
+        My research interests lie at the intersection of
+        gender inequality, work and family, and social stratification.
+        I study how gender inequalities emerge and evolve across the life course,
+        particularly in relation to parenthood, employment, and career decisions.
+        I am especially interested in how gender norms, workplace structures,
+        and institutional contexts shape these inequalities.
         In my work, I use both observational and experimental methods.
       </p>
 
-</div>
     </div>
 
   </section>
+
 </main>
 
 <footer>
