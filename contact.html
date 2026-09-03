@@ -3,13 +3,20 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <title>Contact — Lea Jordan</title>
-  <meta name="description" content="Lea Jordan — Contact" />
+  <meta name="description" content="Contact information for Lea Jordan, PhD Candidate in Sociology at the University of Zurich." />
+
   <link rel="stylesheet" href="styles.css" />
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
   <style>
     body {
+      font-family: 'Inter', sans-serif;
       color: #222;
+      background-color: #ffffff;
     }
 
     a {
@@ -29,27 +36,54 @@
     }
 
     h1 {
+      font-family: 'Playfair Display', serif;
       font-weight: 600;
       margin-bottom: 1.5rem;
     }
 
-    p {
-      margin-bottom: 0.8rem;
+    .office {
+      margin-bottom: 1rem;
+      line-height: 1.7;
     }
 
-    a.link {
+    .contact-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 2rem;
+    }
+
+    .contact-button {
+      display: inline-flex;
+      align-items: center;
+      padding: 8px 14px;
+      border: 1px solid #4b5563;
+      border-radius: 8px;
+      color: #4b5563;
+      text-decoration: none;
+      font-weight: 400;
+      transition: border-color 0.2s ease, color 0.2s ease;
+    }
+
+    .contact-button:hover {
       color: #4a8f6a;
-      font-weight: 500;
+      border-color: #4a8f6a;
+      text-decoration: none;
     }
   </style>
 </head>
 
 <body>
+
 <header>
   <nav class="nav" aria-label="Primary">
+
     <div class="brand">
-      <a href="index.html" style="text-decoration:none;color:inherit">Matilde Perotti</a>
+      <a href="index.html" style="text-decoration:none;color:inherit">
+        Lea Jordan
+      </a>
     </div>
+
     <div class="tabs">
       <a href="index.html">About</a>
       <a href="research.html">Research</a>
@@ -57,28 +91,69 @@
       <a href="cv.html">CV</a>
       <a href="contact.html" aria-current="page">Contact</a>
     </div>
+
   </nav>
 </header>
 
+
 <main class="container">
+
   <h1>Contact</h1>
 
-  <p><strong>Email:</strong> jordan@soziologie.uzh.ch</p>
-  <p><strong>Office:</strong> Department of Sociology – University of Zurich,<br/>
-  Room 5.50, Andreasstrasse 15, 8050 Zurich (Switzerland)</p>
+  <p class="office">
+    <strong>Office:</strong><br>
+    Department of Sociology, University of Zurich<br>
+    Andreasstrasse 15, Room 5.50<br>
+    8050 Zurich, Switzerland
+  </p>
 
-  <p>
-    <a class="link" href="https://www.linkedin.com/in/leamariejordan/" target="_blank" rel="noopener">
+
+  <div class="contact-links">
+
+    <!-- Email -->
+    <a class="contact-button"
+       href="mailto:jordan@soziologie.uzh.ch">
+      ✉ Email
+    </a>
+
+
+    <!-- Google Scholar -->
+    <a class="contact-button"
+       href="YOUR-GOOGLE-SCHOLAR-LINK"
+       target="_blank"
+       rel="noopener noreferrer">
+      🎓 Google Scholar
+    </a>
+
+
+    <!-- ORCID -->
+    <a class="contact-button"
+       href="YOUR-ORCID-LINK"
+       target="_blank"
+       rel="noopener noreferrer">
+      ORCID
+    </a>
+
+
+    <!-- LinkedIn -->
+    <a class="contact-button"
+       href="https://www.linkedin.com/in/leamariejordan/"
+       target="_blank"
+       rel="noopener noreferrer">
       LinkedIn
     </a>
-  </p>
+
+  </div>
+
 </main>
+
 
 <footer>
   <div class="container small">
     © <span id="y"></span> Lea Jordan
   </div>
 </footer>
+
 
 <script>
   const d = new Date();
